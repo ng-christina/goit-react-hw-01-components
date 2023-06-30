@@ -33,5 +33,3 @@ TransactionHistory.propTypes={
     currency: PropTypes.string
 }
 
-
-{/* <tr key={transaction.id} className={`${index % 2 === 0 ? style.even : style.odd}`}></tr> */}
