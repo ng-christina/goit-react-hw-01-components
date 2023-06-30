@@ -1,7 +1,7 @@
 import "../index.css"
 import {Profile} from './profile/profile';
 import { Statistics } from './statistics/statistics';
-import { FriendList } from './friend/friend';
+import { FriendList } from "./friend/friend";
 import { TransactionHistory } from './transaction/transaction';
 
 import user from 'info/user.json'
