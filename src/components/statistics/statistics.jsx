@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 import style from './statistics.module.css';
 
-export function Statistics({title, stats}){
+export const  Statistics = ({title, stats}) =>{
     return(
         <section className={style.statistics}>
-          {title.length > 0 && (
-  <h2 className={style.title}>{title}</h2>)}
+  {title && <h2 className={style.title}>{title}</h2>}
 
   <ul className={style.statlist} >
     {stats.map(({ id, label, percentage})=>(
@@ -30,3 +29,13 @@ Statistics.propTypes = {
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
   }
+
+
+// якщо масив не буде змінюватись, та точно знаю структуру обєктів у масиві
+  // stats: PropTypes.arrayOf(
+  //   PropTypes.shape({
+  //     followers: PropTypes.number.isRequired,
+  //     views: PropTypes.number.isRequired,
+  //     likes: PropTypes.number.isRequired,
+  //   })
+  // ),

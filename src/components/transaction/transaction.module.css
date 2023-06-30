@@ -1,0 +1,13 @@
+.even{
+    background-color: blue;
+}
+
+
+.transactionRow:nth-child(2n) {
+    background-color: rgb(162, 162, 238); 
+  }
+
+
+
+
+  
