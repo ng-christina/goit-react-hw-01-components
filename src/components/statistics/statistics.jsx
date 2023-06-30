@@ -4,7 +4,8 @@ import style from './statistics.module.css';
 export function Statistics({title, stats}){
     return(
         <section className={style.statistics}>
-  <h2 className={style.title}>{title}</h2>
+          {title.length > 0 && (
+  <h2 className={style.title}>{title}</h2>)}
 
   <ul className={style.statlist} >
     {stats.map(({ id, label, percentage})=>(

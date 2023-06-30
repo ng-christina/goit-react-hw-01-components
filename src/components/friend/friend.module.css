@@ -1,0 +1,30 @@
+.friendList{
+
+}
+
+.item{
+
+}
+
+.status{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.avatar{
+
+}
+
+.name{
+
+}
+
+.online{
+    background-color: green;
+}
+.offline{
+    background-color: red;
+}
