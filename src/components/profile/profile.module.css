@@ -1,38 +1,53 @@
-
 .profile{
-
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 50%;
 };
 
 .description{
-
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    width: 25%;
 };
 
 .avatar{
-
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 50%;
 };
 
 .name{
-
+color: blue;
 };
 
 .tag{
-
+    color: blue;
 };
 
 .location{
-
+    color: blue;
 };
 
 .stats{
-
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 25%;
+    margin: 0 auto;
 };
 
 .label{
 
+    color: blue;
 };
 
 .quantity{
 
+    color: blue;
 };
 
 
