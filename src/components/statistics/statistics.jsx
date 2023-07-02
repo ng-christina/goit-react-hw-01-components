@@ -6,11 +6,11 @@ export const  Statistics = ({title, stats}) =>{
         <section className={style.statistics}>
   {title && <h2 className={style.title}>{title}</h2>}
 
-  <ul className={style.statlist} >
+  <ul className={style.stat_list} >
     {stats.map(({ id, label, percentage})=>(
     <li className={style.item}
     key = {id}
-    style={{background: getRandomHexColor()}}>
+    style={{background: getRandomVioletColor()}}>
       <span className={style.label}>.{label}</span>
       <span className={style.percentage}>{percentage}%</span>
     </li>
@@ -26,10 +26,13 @@ Statistics.propTypes = {
 }
 
 
-function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
-  }
-
+function getRandomVioletColor() {
+  const shades = ["#853690","#9a00af", "#db69eb", "#be66f1", "#9819e1"];
+  const randomIndex = Math.floor(Math.random() * shades.length);
+  const color = shades[randomIndex];
+  return color;
+}
+  
 
 // якщо масив не буде змінюватись, та точно знаю структуру обєктів у масиві
   // stats: PropTypes.arrayOf(
