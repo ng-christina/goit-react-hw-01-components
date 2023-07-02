@@ -28,6 +28,12 @@
     border:  1px solid rgb(37, 13, 45);
   }
 
+.item:nth-child(5n) {
+  border-radius: 0 0 4px 0;
+}
+.item:first-child{
+  border-radius: 0 0 0 4px;
+}
 
 .label{
   font-size: 12px;
