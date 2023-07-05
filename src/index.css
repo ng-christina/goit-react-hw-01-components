@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(222 215 228);
+  background-color: rgb(151, 151, 151);
   opacity: 0;
   animation: fade-in 5s forwards;
   animation-timing-function: ease-out;

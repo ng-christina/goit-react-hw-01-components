@@ -17,7 +17,9 @@
 
     font-weight: bold;
     font-size: 18px;
-    color: #7f3081;;
+    color: #000000;;
+
+    background-color: #4f4f4f;
   }
   
   .item {
@@ -37,10 +39,10 @@
 
 .label{
   font-size: 12px;
-  color: #4f125a;
+  color: #000000;
 }
 
 .percentage{
   font-size: 12px;
-  color: #ffffff;
+  color: #000000;
 }

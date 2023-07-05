@@ -15,12 +15,12 @@
     align-items: center;
     justify-content: space-around;
 
-    background-color: rgb(217 189 243);
-    border: 1px solid #772e6d;
+    background-color: rgb(131, 127, 135);
+    border: 1px solid #000000;
 
     /* box-shadow: 10px 10px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
     border-radius: 4px;
-    box-shadow: 0 0 5px #a169b5, 0 0 10px #9d41bf;
+    box-shadow: 0 0 5px #424242, 0 0 10px #a59fa7;
 }
 
 .status{
@@ -33,7 +33,7 @@
 .name{
     font-weight: 500;
     font-size: 15px;
-    color: #884e9d;
+    color: #000000;
 }
 
 .online{

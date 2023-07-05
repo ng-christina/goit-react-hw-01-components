@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import style from './friend.module.css'
+import style from './friend.module.css';
+import { FriendListItem } from '../friendsListItem/friend-list';
 
 
 export const FriendList = ({friends})=>{
@@ -17,20 +18,14 @@ export const FriendList = ({friends})=>{
     )
 }
 
- const FriendListItem = ({avatar, name, isOnline}) => {
-    return(
-        <li className={style.item}>
-  <span className={`${style.status} ${isOnline ? style.online : style.offline}`}></span>
-  <img className={style.avatar} src={avatar} alt="User avatar" width="48" />
-  <p className={style.name}>{name}</p>
-</li>
-    )
-}
 
 FriendList.propTypes={
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            avatar: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            isOnline: PropTypes.bool.isRequired,
+        })
+    ).isRequired,
 }
-
-
